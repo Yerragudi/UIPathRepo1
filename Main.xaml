@@ -91,13 +91,13 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281.6,5470.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281.6,5398.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="1219.2,5347.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
+    <Sequence sap:VirtualizedContainerService.HintSize="1219.2,5275.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="https://fa-eudr-dev4-saasfademo1.ds-fa.oraclepdemos.com/hcmUI/faces/FuseWelcome?fndThemeName=Vision_Default" Name="Browserpath" />
         <Variable x:TypeArguments="x:String" Name="getInvoice" />
@@ -152,20 +152,20 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:ForEach>
       </Sequence>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Sign In" sap:VirtualizedContainerService.HintSize="1156.8,4979.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c18cdb31-10ec-4821-a618-113256473267" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Sign In" sap:VirtualizedContainerService.HintSize="1156.8,4907.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c18cdb31-10ec-4821-a618-113256473267" Version="V1" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1123.2,4752.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1123.2,4680.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Steps to download the Report" sap:VirtualizedContainerService.HintSize="1060.8,4628" sap2010:WorkflowViewState.IdRef="Sequence_21">
+              <Sequence DisplayName="Steps to download the Report" sap:VirtualizedContainerService.HintSize="1060.8,4556" sap2010:WorkflowViewState.IdRef="Sequence_21">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -343,9 +343,9 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Check App State 'Test_Bot_Latest_1'" sap:VirtualizedContainerService.HintSize="998.4,1274.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c18cdb31-10ec-4821-a618-113256473267" Timeout="7" Version="V1">
+                <uix:NCheckState DisplayName="Check App State 'Test_Bot_Latest_1'" sap:VirtualizedContainerService.HintSize="998.4,1202.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c18cdb31-10ec-4821-a618-113256473267" Timeout="7" Version="V1">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="545.6,1046.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="545.6,974.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -395,7 +395,7 @@
                                 <InArgument x:TypeArguments="x:String">Test case passed</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Test Success &quot; +getInvoice]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:05" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Test Success &quot; +getInvoice]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -414,7 +414,6 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="483.2,32" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Done" />
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
